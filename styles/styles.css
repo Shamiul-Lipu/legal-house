@@ -1,12 +1,39 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;800&family=Poppins&display=swap');
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-/*---------------- Uitilites/Common styles -----------------*/
+:root {
+    --pr-color: #B68C5A;
+    --pr-font: 'EB Garamond', serif;
+    --se-font: 'Poppins', sans-serif;
+}
 
+/*---------------- Custom CSS/Uitilites/Common styles -----------------*/
+.common-button {
+    background-color: var(--pr-color);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 8px;
+    font-family: var(--se-font);
+}
 
+.title-head-text {
+    font-family: var(--pr-font);
+}
+
+.main-font {
+    font-family: var(--pr-font);
+}
+
+.secondery-font {
+    font-family: var(--se-font);
+}
 
 /*-----------------------------------------------------------
                     Header section
@@ -26,3 +53,9 @@
 /*-----------------------------------------------------------
 -------------------   Midea Quries   ------------------------
 -------------------------------------------------------------*/
+/* for x-small devices */
+@media screen and (max-width: 577px) {
+    .navbar-collapse>.common-button {
+        display: none;
+    }
+}
