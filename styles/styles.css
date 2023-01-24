@@ -97,6 +97,11 @@
     border: 3px solid var(--pr-color);
 }
 
+/* new section */
+.primium-border {
+    border: 3px solid var(--pr-color);
+}
+
 /*-----------------------------------------------------------
                     Footer section
 -------------------------------------------------------------*/
