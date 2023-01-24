@@ -17,6 +17,10 @@
 }
 
 /*---------------- Custom CSS/Uitilites/Common styles -----------------*/
+.section-padding-top-bottom {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
 .title-head-text {
     font-family: var(--pr-font);
@@ -58,11 +62,39 @@
 
 /* legal practice section */
 .legal-top-section-hover:hover {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.473));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.26));
 }
 
 .legal-bottom-section-hover:hover {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.473));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.26));
+}
+
+/* Review section */
+.carousel-item>img {
+    height: 70vh;
+}
+
+.banner-image-one {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.205), rgb(0, 0, 0)), url(../images/Rectangle\ 4.png);
+    height: 70vh;
+    width: 100%;
+}
+
+.banner-image-two {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.205), rgb(0, 0, 0)), url(../images/closeup-gavel-judgement-concept.jpg);
+    height: 70vh;
+    width: 100%;
+}
+
+.banner-image-three {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.205), rgb(0, 0, 0)), url(../images/law-justice-concept-dark-background.jpg);
+    height: 70vh;
+    width: 100%;
+}
+
+/* carousal */
+.carousel-caption>img {
+    border: 3px solid var(--pr-color);
 }
 
 /*-----------------------------------------------------------
