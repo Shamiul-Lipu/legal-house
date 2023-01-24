@@ -17,13 +17,6 @@
 }
 
 /*---------------- Custom CSS/Uitilites/Common styles -----------------*/
-.common-button {
-    background-color: var(--pr-color);
-    color: #FFFFFF;
-    border: 0;
-    border-radius: 8px;
-    font-family: var(--se-font);
-}
 
 .title-head-text {
     font-family: var(--pr-font);
@@ -33,16 +26,44 @@
     font-family: var(--se-font);
 }
 
+.primary-color {
+    color: var(--pr-color);
+}
+
+.common-button {
+    background-color: var(--pr-color);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 8px;
+    font-family: var(--se-font);
+}
+
+.common-paragraph {
+    color: var(--font-color);
+    font-size: .80rem;
+    font-family: var(--se-font);
+    font-weight: 400;
+}
+
 /*-----------------------------------------------------------
                     Header section
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+                    Main section
 -------------------------------------------------------------*/
 .overlay {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(34, 31, 31));
 }
 
-/*-----------------------------------------------------------
-                    Main section
--------------------------------------------------------------*/
+/* legal practice section */
+.legal-top-section-hover:hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.473));
+}
+
+.legal-bottom-section-hover:hover {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(34, 31, 31, 0.473));
+}
 
 /*-----------------------------------------------------------
                     Footer section
@@ -54,12 +75,15 @@
 -------------------------------------------------------------*/
 /* for x-small devices */
 @media screen and (max-width: 577px) {
+
+    /* navbar */
     .navbar-collapse>.common-button {
         display: none;
     }
 
+    /* banner */
     .banner>img {
-        height: 50vh;
+        height: 70vh;
         width: 100%;
     }
 
