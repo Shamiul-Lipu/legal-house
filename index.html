@@ -97,17 +97,43 @@
 
                     </ul>
                     <!-- button -->
-                    <button class="btn common-button my-2 py-3 px-5 fw-normal d-lg-block d-sm-none" type="submit">Free
+                    <button class="btn common-button my-2 py-3 px-5 fw-normal d-lg-block d-sm-none" type="submit"
+                        data-bs-toggle="modal" data-bs-target="#reg-modal">Free
                         Consultation</button>
                 </div>
 
             </div>
             <!-- button -->
-            <button class="btn common-button my-2 py-3 px-5 fw-normal d-lg-none" type="submit">Free
+            <button class="btn common-button my-2 py-3 px-5 fw-normal d-lg-none" type="submit" data-bs-toggle="modal"
+                data-bs-target="#reg-modal">Free
                 Consultation</button>
         </nav>
 
     </header>
+    <!-- modal -->
+    <!-- modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, exercitationem laboriosam nihil
+                        minus voluptatibus harum aliquam consequatur pariatur inventore dignissimos illum excepturi
+                        ratione ipsum sit iusto alias eligendi fugit laborum?</p>
+                    <label for="modal-email" class="form-label">Your email address:</label>
+                    <input type="text" class="form-control" id="modal-email" placeholder="e.g. mario@example.com">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-------------------------------------------------------- 
                            Main section 
@@ -407,7 +433,7 @@
 
         <!-- Contact us section -->
         <!-- ------------------ -->
-        <section class="container-xxl px-0">
+        <section class="container-xxl px-0 section-padding-top-bottom">
             <!-- section title -->
             <div class="text-center">
                 <h3 class="title-head-text display-5 fw-bold">Contact With Us</h3>
@@ -416,7 +442,7 @@
                     have <br>suffered alteration in some form, by injected humour.</p>
             </div>
 
-            <div class="d-flex row g-0 justify-content-center align-items-center">
+            <div class="d-flex row g-0 justify-content-between align-items-center">
                 <!-- Contact addresses -->
                 <!-- <div class="d- row g-0">
                     <div class="col-lg-6">
@@ -500,7 +526,54 @@
     <!-------------------------------------------------------- 
                             Footer section
      -------------------------------------------------------->
-    <footer>
+    <footer class="container-fluid bg-dark">
+        <div class="container-xxl px-2 section-padding-top-bottom ">
+            <div class="row g-0 d-flex">
+                <div class="col-12 col-sm-12 col-md-3 pe-md-4">
+                    <img src="images/Group 37.png" alt="logo">
+                    <p class="text-white-50">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered
+                        alteration in some form, by injected humour.</p>
+                </div>
+                <div class="text-white col-12 col-sm-12 col-md-3 pe-md-4">
+                    <h3>Usefull Link</h3>
+                    <ul class="text-white-50 list-unstyled">
+                        <li>Homes</li>
+                        <li>About Us</li>
+                        <li>Cases</li>
+                        <li>Blog</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="text-white col-12 col-sm-12 col-md-3 pe-md-4">
+                    <h3 class="text-white">Contact Now</h3>
+                    <p class="text-white-50">555 4th 5t NW, Washington
+                        DC 20530, United States</p>
+                    <p class="text-white-50">+88 01750 000 000
+                        +88 01750 000 000</p>
+                    <p class="text-white-50">info@gmail.com
+                        info@gmail.com</p>
+                </div>
+                <div class="text-white col-12 col-sm-12 col-md-3">
+                    <h3 class="text-white">Subscribe</h3>
+                    <p class="text-white-50">Subscribe for our latest & Articles. We Wont Give You Spam Mails</p>
+                    <div class=" text-center d-grid">
+                        <form class="">
+                            <div class="input-group mb-4">
+
+                                <input type="text" id="email"
+                                    class="form-control banner-input my-2 py-3 ps-5 pe-0 border-0 rounded-3"
+                                    placeholder="@email address" />
+                                <span class="input-group-text btn common-button my-2 py-3 px-5 fw-normal">
+                                    <i class="bi bi-envelope-at "></i></i>
+                                </span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </footer>
     <!-- Bootstrap JS -->
